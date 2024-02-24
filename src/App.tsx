@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import './App.css';
 
+
 class App extends React.Component {
   state = {
     loading: true
@@ -121,9 +122,9 @@ class App extends React.Component {
         <footer className="footer footer-center p-10 bg-zinc-950 text-base-content rounded"> {/* FOOTER */}
           <nav>
             <div className="grid grid-flow-col gap-4 text-xl">
-              <a href="https://linkedin.com/in/phillip-a-jordan" target="_blank" rel="noreferrer"><i className="fa fa-linkedin"></i></a>
-              <a href="https://github.com/spaghety" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
-              <a href="/resume.pdf" target="_blank" rel="noreferrer"><i className="fa fa-file"></i></a>
+              <a href="https://linkedin.com/in/phillip-a-jordan" target="_blank" rel="noreferrer"><i className="fa fa-linkedin hover:text-sky-400"></i></a>
+              <a href="https://github.com/spaghety" target="_blank" rel="noreferrer"><i className="fa fa-github hover:text-sky-400"></i></a>
+              <a href="/resume.pdf" target="_blank" rel="noreferrer"><i className="ai ai-cv hover:text-sky-400"></i></a>
             </div>
             <div className="grid grid-flow-col gap-4 text-xl mt-2">
               <p className="text-sm">email: phillip.a.jordan@gmail.com</p>
