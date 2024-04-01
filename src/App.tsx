@@ -55,7 +55,7 @@ class App extends React.Component {
                 <div className="timeline-end m-10">
                   <div className="text-lg text-bold">Student</div>
                   <div className="text-md">Virginia Tech, 2022-present</div>
-                  After graduating Durham Tech, I transferred to Virginia Tech in 2022 and then decided to enroll in their Corps of Cadets. I began in the Air Force ROTC program on a three-year track, taking both the first and second year classes simulatneously.<br />
+                  After graduating Durham Tech, I transferred to Virginia Tech in 2022 and then decided to enroll in their Corps of Cadets. I am currently in the citizen leader (VPI) track with no service commitment after graduation.<br />
                   During my first year at Virginia Tech, I dedicated a lot of time and effort to the Corps and Air Force while always keeping my academics as my highest priority.
                 </div>
                 <hr className="bg-sky-500" />
