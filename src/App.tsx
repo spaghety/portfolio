@@ -53,10 +53,10 @@ class App extends React.Component {
                   <i className="fa fa-check bg-sky-500"></i>
                 </div>
                 <div className="timeline-end m-10">
-                  <div className="text-lg text-bold">Student</div>
+                  <div className="text-lg text-bold">Computer Science Student</div>
                   <div className="text-md">Virginia Tech, 2022-present</div>
-                  After graduating Durham Tech, I transferred to Virginia Tech in 2022 and then decided to enroll in their Corps of Cadets. I am currently in the citizen leader (VPI) track with no service commitment after graduation.<br />
-                  During my first year at Virginia Tech, I dedicated a lot of time and effort to the Corps and Air Force while always keeping my academics as my highest priority.
+                  After graduating Durham Tech, I transferred to Virginia Tech in 2022 and decided to enroll in their Corps of Cadets. I am currently in the citizen leader (VPI) track with no service commitment after graduation.<br />
+                  During my time at Virginia Tech and in the corps, I gained an interest in applications of software tools to national security and defense.
                 </div>
                 <hr className="bg-sky-500" />
               </li>
@@ -64,8 +64,8 @@ class App extends React.Component {
                 <hr className="bg-sky-500" />
                 <div className="timeline-start md:text-end m-10">
                   <div className="text-lg text-bold">Undergraduate Research Assistant</div>
-                  <div className="text-md">Hume Center, August 2023-present</div>
-                  I am working as an undergarduate research assistant with the Hume Center on a project exploring the application of LLMs to analyzing and detecting malware.<br />
+                  <div className="text-md">VTNSI Analyzing Malware with LLMs Project, August 2023-May 2024</div>
+                  I am working as an undergarduate research assistant with the Virginia Tech National Security Institute on a project exploring the application of LLMs to analyzing and detecting malware.<br />
                   On this project, I work mostly with prompt engineering native LLMs and reverse engineering C programs using python.
                 </div>
                 <div className="timeline-middle">
@@ -80,8 +80,20 @@ class App extends React.Component {
                 </div>
                 <div className="timeline-end m-10">
                   <div className="text-lg text-bold">Student Machine Learning Team Leader</div>
-                  <div className="text-md">Virginia Tech Undergraduate Research CS, January 2024-present</div>
+                  <div className="text-md">VTURCS AI-Powered Diary Study Tool Project, January 2024-May 2024</div>
                   {"t"}I am working as the AI/ML team leader for a VTURCS research project with the objective of creating a diary study platform that allows administrators to analyze user entries with AI-powered topic modelling.
+                </div>
+                <hr className="bg-sky-500" />
+              </li>
+              <li>
+                <hr className="bg-sky-500" />
+                <div className="timeline-middle">
+                  <i className="fa fa-check bg-sky-500"></i>
+                </div>
+                <div className="timeline-start md:text-end m-10">
+                  <div className="text-lg text-bold">Student Researcher</div>
+                  <div className="text-md">VTURCS Appalachian Trail Mobile Software Project, June 2024-present</div>
+                  I am currently working on a summer research project focused on developing a mobile app to help hikers on the Appalachian Trail journal and track their progress.
                 </div>
               </li>
             </ul>
