@@ -32,6 +32,9 @@ class App extends React.Component {
               <div className="text-left lg:w-2/5">
                 <h1 className="text-5xl font-bold">Phillip Jordan</h1>
                 <p className="py-6">I'm a Virginia Tech student and cadet majoring in <span className="text-sky-400">Computer Science</span>, looking for a career in software engineering and development on a global scale.</p>
+                <Link smooth spy to="footer" className="btn rounded-full px-5 bg-transparent text-sky-400 border-sky-400 hover:border-sky-400 hover:bg-sky-400 hover:text-zinc-900">
+                Links
+                </Link>
               </div>
             </div>
           </div>
