@@ -32,6 +32,9 @@ class App extends React.Component {
               <div className="text-left lg:w-2/5">
                 <h1 className="text-5xl font-bold">Phillip Jordan</h1>
                 <p className="py-6">I'm a Virginia Tech student and cadet majoring in <span className="text-sky-400">Computer Science</span>, looking for a career in software engineering and development on a global scale.</p>
+                <Link smooth spy to="footer" className="btn rounded-full px-5 bg-transparent text-sky-400 border-sky-400 hover:border-sky-400 hover:bg-sky-400 hover:text-zinc-900">
+                Links
+                </Link>
               </div>
             </div>
           </div>
@@ -102,12 +105,12 @@ class App extends React.Component {
         <section id="skills"> {/* SKILLS SECTION */}
           <div className="lg:p-20 p-10 text-left">
             <h1 className="text-5xl lg:m-10">Skills</h1>
-            <div className="card lg:mx-20 lg:p-20 lg:w-4/5">
+            <div className="card lg:mx-20 lg:p-10 lg:w-4/5">
               <img src="/img/icons8-internet-48.png" className="w-10 my-5" alt="web development" />
               <h1 className="text-xl font-bold">Web Development</h1>
               <p className="flex">I have experience with full-stack development as an independent hobbyist, working on teams, and working on research projects. I have exprience with PHP, React.js, Node.js, MySQL, MongoDB, and all the standard front-end languages. Web development has been my programming mode of choice since middle school.</p>
             </div>
-            <div className="card lg:mx-20 lg:p-20 lg:w-4/5">
+            <div className="card lg:mx-20 lg:p-10 lg:w-4/5">
               <img src="/img/icons8-robot-50.png" className="w-10 my-5 " alt="machine learning" />
               <h1 className="text-xl font-bold">Machine Learning</h1>
               <p className="flex">I have a combined year of experience using both large langauge models and topic models in research projects at Virginia Tech related to code analysis and data modelling.</p>
@@ -117,36 +120,58 @@ class App extends React.Component {
         <section id="projects"> {/* PROJECTS SECTION */}
           <div className="lg:p-20 text-left grid">
             <h1 className="text-5xl lg:m-10">Projects</h1>
-            <div className="card lg:card-side lg:m-20 m-5 my-10 lg:w-4/5 bg-zinc-800 shadow-xl">
-              <img className="h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/demos/comma.png" alt="Comma Application" />
+            <div className="card lg:card-side lg:m-10 m-5 lg:w-4/5 bg-zinc-800 shadow-xl">
+              <img className="h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/demos/vturcsds.png" alt="Diary Study Web App Wireframe" title="Figma screenshot" />
+              <div className="card-body">
+                <h2 className="card-title">VTURCS Diary Study Web App</h2>
+                <p>
+                  I worked as the machine learning team lead on a research project at Virginia Tech focusing on analyzing diary studies and discussions using AI-powered topic modelling and data visualization.
+                  </p>
+                  <p>
+                In this project, I created python scripts to analyze sentiment, extract significant sentences, and analyze discussion posts using nltk, sklearn, and transformers.</p>
+                <a href="https://github.com/wilhelmthegreat/diarystudyvt" className="btn rounded-full hover:bg-sky-400 hover:text-zinc-900 w-fit" target="_blank" rel="noreferrer">View on Github <i className="fa fa-external-link"></i></a>
+              </div>
+            </div>
+            <div className="card lg:card-side lg:m-10 m-5 lg:w-4/5 bg-zinc-800 shadow-xl">
+              <img className="h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/mwpapersc.png" alt="Research Presentation Powerpoint Screenshot" title="Presentation Slide" />
+              <div className="card-body">
+                <h2 className="card-title">Analyzing Malware with LLMs</h2>
+                <p className="font-medium">
+                  Authors: Phillip Jordan, Mark Thompson, Jared Gregersen<br/>
+                  <i>Presented in Academic Symposium on Cybersecurity, Emerging Networks, and Technologies (ASCENT), 2024</i><br/>
+                  </p>
+                  <p className="text-s">
+                  I was the sole student researcher on a project with the Virginia Tech National Security Institute (VTNSI) on how LLMs can be used to reverse engineer potentially malicious executables by analyzing disassembled machine code and presented my findings to members of the military and intelligence community.
+                </p>
+                <a href="/pdf/mwpaper.pdf" className="btn rounded-full hover:bg-sky-400 hover:text-zinc-900 w-fit" target="_blank" rel="noreferrer">
+                PDF Report <i className="fa fa-file"></i>
+                </a>
+              </div>
+            </div>
+            <div className="card lg:card-side lg:m-10 m-5 lg:w-4/5 bg-zinc-800 shadow-xl">
+              <img className="h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/demos/comma.png" alt="Comma Application" title="Screenshot of landing page" />
               <div className="card-body">
                 <h2 className="card-title">Comma App</h2>
                 <p>Comma is a women's health reminder app originally designed to help women track birth control. Originally made as a submission for Hackviolet Spring 2024 at Virginia Tech.</p>
-                <a href="https://github.com/CommaHackViolet/commapp" className="btn rounded-full hover:bg-sky-400 hover:text-zinc-900 w-fit" target="_blank" rel="noreferrer">View on Github</a>
-              </div>
-            </div>
-            <div className="card lg:card-side lg:m-20 m-5 my-10 lg:w-4/5 bg-zinc-800 shadow-xl">
-              <img className="h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/demos/vturcsds.png" alt="Diary Study Web App Wireframe" />
-              <div className="card-body">
-                <h2 className="card-title">VTURCS Diary Study Web App</h2>
-                <p>I am working as the machine learning team lead on a research project at Virginia Tech focusing on analyzing diary studies and discussions using AI-powered topic modelling and data visualization.</p>
-                <a href="https://github.com/wilhelmthegreat/diarystudyvt" className="btn rounded-full hover:bg-sky-400 hover:text-zinc-900 w-fit" target="_blank" rel="noreferrer">View on Github</a>
+                <a href="https://github.com/CommaHackViolet/commapp" className="btn rounded-full hover:bg-sky-400 hover:text-zinc-900 w-fit" target="_blank" rel="noreferrer">View on Github <i className="fa fa-external-link"></i></a>
               </div>
             </div>
           </div>
         </section>
-        <footer className="footer footer-center p-10 bg-zinc-950 text-base-content rounded"> {/* FOOTER */}
-          <nav>
-            <div className="grid grid-flow-col gap-4 text-xl">
-              <a href="https://linkedin.com/in/phillip-a-jordan" target="_blank" rel="noreferrer"><i className="fa fa-linkedin hover:text-sky-400"></i></a>
-              <a href="https://github.com/spaghety" target="_blank" rel="noreferrer"><i className="fa fa-github hover:text-sky-400"></i></a>
-              <a href="/resume.pdf" target="_blank" rel="noreferrer"><i className="ai ai-cv hover:text-sky-400"></i></a>
-            </div>
-            <div className="grid grid-flow-col gap-4 text-xl mt-2">
-              <p className="text-sm">email: phillip.a.jordan@gmail.com</p>
-            </div>
-          </nav>
-        </footer>
+        <section id="footer">
+          <footer className="footer footer-center p-10 bg-zinc-950 text-base-content rounded"> {/* FOOTER */}
+            <nav>
+              <div className="grid grid-flow-col gap-4 text-xl">
+                <a href="https://linkedin.com/in/phillip-a-jordan" target="_blank" rel="noreferrer"><i className="fa fa-linkedin hover:text-sky-400"></i></a>
+                <a href="https://github.com/spaghety" target="_blank" rel="noreferrer"><i className="fa fa-github hover:text-sky-400"></i></a>
+                <a href="/resume.pdf" target="_blank" rel="noreferrer"><i className="ai ai-cv hover:text-sky-400"></i></a>
+              </div>
+              <div className="grid grid-flow-col gap-4 text-xl mt-2">
+                <p className="text-sm">email: phillip.a.jordan@gmail.com</p>
+              </div>
+            </nav>
+          </footer>
+        </section>
       </div>
     );
   }
