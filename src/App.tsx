@@ -28,9 +28,9 @@ class App extends React.Component {
         <section id="top"> {/* HERO SECTION */}
           <div className="hero h-screen">
             <div className="hero-content flex-col lg:flex-row">
-              <img src="img/pfp.jpg" className="max-w-sm rounded-lg shadow-2x1" alt="Me" />
+              <img src="img/pfp.jpg" className="lg:max-w-sm max-w-64 rounded-lg shadow-2x1" alt="Me" />
               <div className="text-left lg:w-2/5">
-                <h1 className="text-5xl font-bold">Phillip Jordan</h1>
+                <h1 className="lg:text-5xl text-4xl font-bold">Phillip Jordan</h1>
                 <p className="py-6">I'm a Virginia Tech student and cadet majoring in <span className="text-sky-400">Computer Science</span>, looking for a career in software engineering and development on a global scale.</p>
                 <Link smooth spy to="footer" className="btn rounded-full px-5 bg-transparent text-sky-400 border-sky-400 hover:border-sky-400 hover:bg-sky-400 hover:text-zinc-900">
                 Links
@@ -47,9 +47,9 @@ class App extends React.Component {
             <li><Link activeClass="active" smooth spy to="projects" className="rounded-full p-3 px-4 lg:px-8">Projects</Link></li>
           </ul>
         </div>
-        <section id="experience">
-          <div className="lg:p-20 p-10 text-left">
-            <h1 className="text-5xl lg:m-10">Experience</h1>
+        <section id="experience"> {/* EXPERIENCE SECTION */}
+          <div className="p-5 lg:p-10 text-left">
+            <h1 className="text-4xl lg:text-5xl my-5 lg:m-10">Experience</h1>
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
               <li>
                 <div className="timeline-middle">
@@ -103,14 +103,14 @@ class App extends React.Component {
           </div>
         </section>
         <section id="skills"> {/* SKILLS SECTION */}
-          <div className="lg:p-20 p-10 text-left">
-            <h1 className="text-5xl lg:m-10">Skills</h1>
-            <div className="card lg:mx-20 lg:p-10 lg:w-4/5">
+          <div className="p-5 lg:p-10 text-left">
+            <h1 className="text-4xl lg:text-5xl my-5 lg:m-10">Skills</h1>
+            <div className="card lg:mx-20 my-10 lg:my-0 lg:p-10 lg:w-4/5">
               <img src="/img/icons8-internet-48.png" className="w-10 my-5" alt="web development" />
               <h1 className="text-xl font-bold">Web Development</h1>
               <p className="flex">I have experience with full-stack development as an independent hobbyist, working on teams, and working on research projects. I have exprience with PHP, React.js, Node.js, MySQL, MongoDB, and all the standard front-end languages. Web development has been my programming mode of choice since middle school.</p>
             </div>
-            <div className="card lg:mx-20 lg:p-10 lg:w-4/5">
+            <div className="card lg:mx-20 my-10 lg:my-0 lg:p-10 lg:w-4/5">
               <img src="/img/icons8-robot-50.png" className="w-10 my-5 " alt="machine learning" />
               <h1 className="text-xl font-bold">Machine Learning</h1>
               <p className="flex">I have a combined year of experience using both large langauge models and topic models in research projects at Virginia Tech related to code analysis and data modelling.</p>
@@ -118,10 +118,10 @@ class App extends React.Component {
           </div>
         </section>
         <section id="projects"> {/* PROJECTS SECTION */}
-          <div className="lg:p-20 text-left grid">
-            <h1 className="text-5xl lg:m-10">Projects</h1>
-            <div className="card lg:card-side lg:m-10 m-5 lg:w-4/5 bg-zinc-800 shadow-xl">
-              <img className="h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/demos/vturcsds.png" alt="Diary Study Web App Wireframe" title="Figma screenshot" />
+          <div className="p-5 lg:p-10 text-left grid">
+            <h1 className="text-4xl lg:text-5xl my-5 lg:m-10">Projects</h1>
+            <div className="card lg:card-side my-10 mx-5 lg:w-4/5 bg-zinc-800 shadow-xl">
+              <img className="object-cover h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/demos/vturcsds.png" alt="Diary Study Web App Wireframe" title="Figma screenshot" />
               <div className="card-body">
                 <h2 className="card-title">VTURCS Diary Study Web App</h2>
                 <p>
@@ -132,8 +132,8 @@ class App extends React.Component {
                 <a href="https://github.com/wilhelmthegreat/diarystudyvt" className="btn rounded-full hover:bg-sky-400 hover:text-zinc-900 w-fit" target="_blank" rel="noreferrer">View on Github <i className="fa fa-external-link"></i></a>
               </div>
             </div>
-            <div className="card lg:card-side lg:m-10 m-5 lg:w-4/5 bg-zinc-800 shadow-xl">
-              <img className="h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/mwpapersc.png" alt="Research Presentation Powerpoint Screenshot" title="Presentation Slide" />
+            <div className="card lg:card-side my-10 mx-5 lg:w-4/5 bg-zinc-800 shadow-xl">
+              <img className="object-cover h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/mwpapersc.png" alt="Research Presentation Powerpoint Screenshot" title="Presentation Slide" />
               <div className="card-body">
                 <h2 className="card-title">Analyzing Malware with LLMs</h2>
                 <p className="font-medium">
@@ -148,8 +148,8 @@ class App extends React.Component {
                 </a>
               </div>
             </div>
-            <div className="card lg:card-side lg:m-10 m-5 lg:w-4/5 bg-zinc-800 shadow-xl">
-              <img className="h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/demos/comma.png" alt="Comma Application" title="Screenshot of landing page" />
+            <div className="card lg:card-side my-10 mx-5 lg:w-4/5 bg-zinc-800 shadow-xl">
+              <img className="object-cover h-80 lg:h-auto lg:w-80 flex-none rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden" src="/img/demos/comma.png" alt="Comma Application" title="Screenshot of landing page" />
               <div className="card-body">
                 <h2 className="card-title">Comma App</h2>
                 <p>Comma is a women's health reminder app originally designed to help women track birth control. Originally made as a submission for Hackviolet Spring 2024 at Virginia Tech.</p>
