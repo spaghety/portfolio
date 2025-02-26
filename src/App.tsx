@@ -98,6 +98,7 @@ class App extends React.Component {
                   <div className="text-md">VTURCS Appalachian Trail Mobile Software Project, June 2024-July 2024</div>
                   I worked on a summer research project focused on developing a mobile app to help hikers on the Appalachian Trail journal and track their progress and fill out social research surveys for rewards.
                 </div>
+                <hr className="bg-sky-500" />
               </li>
               <li>
                 <hr className="bg-sky-500" />
@@ -109,7 +110,6 @@ class App extends React.Component {
                   <div className="text-md">Naval Surface Warfare Center, Carderock Division, January 2025-present</div>
                   I'm currently working as a Navy civilian maintaining the acoustic modelling software used in submarine and surface trainers. In this position, I've developed my skills in analyzing and documenting legacy code in a partially classified codebase.
                 </div>
-                <hr className="bg-sky-500" />
               </li>
             </ul>
           </div>
