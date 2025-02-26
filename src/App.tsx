@@ -31,7 +31,7 @@ class App extends React.Component {
               <img src="img/pfp.jpg" className="lg:max-w-sm max-w-64 rounded-lg shadow-2x1" alt="Me" />
               <div className="text-left lg:w-2/5">
                 <h1 className="lg:text-5xl text-4xl font-bold">Phillip Jordan</h1>
-                <p className="py-6">I'm a Virginia Tech student and cadet majoring in <span className="text-sky-400">Computer Science</span>, looking for a career in software engineering and development on a global scale.</p>
+                <p className="py-6">I'm a Navy civilian employee maintaining a partially classified codebase for acoustic simulations used in submarine and surface trainers written primarily in C++, looking for new opportunities to use my security clearance and improve my technical skills.</p>
                 <Link smooth spy to="footer" className="btn rounded-full px-5 bg-transparent text-sky-400 border-sky-400 hover:border-sky-400 hover:bg-sky-400 hover:text-zinc-900">
                 Links
                 </Link>
@@ -57,8 +57,8 @@ class App extends React.Component {
                 </div>
                 <div className="timeline-end m-10">
                   <div className="text-lg text-bold">Computer Science Student</div>
-                  <div className="text-md">Virginia Tech, 2022-present</div>
-                  After graduating Durham Tech, I transferred to Virginia Tech in 2022 and decided to enroll in their Corps of Cadets. I am currently in the citizen leader (VPI) track with no service commitment after graduation.<br />
+                  <div className="text-md">Virginia Tech, 2022-2024</div>
+                  After graduating Durham Tech, I transferred to Virginia Tech in 2022 and decided to enroll in their Corps of Cadets, initially with the Air Force but then later as a civilian.<br />
                   During my time at Virginia Tech and in the corps, I gained an interest in applications of software tools to national security and defense.
                 </div>
                 <hr className="bg-sky-500" />
@@ -84,7 +84,7 @@ class App extends React.Component {
                 <div className="timeline-end m-10">
                   <div className="text-lg text-bold">Student Machine Learning Team Leader</div>
                   <div className="text-md">VTURCS AI-Powered Diary Study Tool Project, January 2024-May 2024</div>
-                  {"t"}I am working as the AI/ML team leader for a VTURCS research project with the objective of creating a diary study platform that allows administrators to analyze user entries with AI-powered topic modelling.
+                  {"t"}I worked as the AI/ML team leader for a VTURCS research project with the objective of creating a diary study platform that allows administrators to analyze user entries with AI-powered topic modelling.
                 </div>
                 <hr className="bg-sky-500" />
               </li>
@@ -95,9 +95,21 @@ class App extends React.Component {
                 </div>
                 <div className="timeline-start md:text-end m-10">
                   <div className="text-lg text-bold">Student Researcher</div>
-                  <div className="text-md">VTURCS Appalachian Trail Mobile Software Project, June 2024-present</div>
-                  I am currently working on a summer research project focused on developing a mobile app to help hikers on the Appalachian Trail journal and track their progress.
+                  <div className="text-md">VTURCS Appalachian Trail Mobile Software Project, June 2024-July 2024</div>
+                  I worked on a summer research project focused on developing a mobile app to help hikers on the Appalachian Trail journal and track their progress and fill out social research surveys for rewards.
                 </div>
+              </li>
+              <li>
+                <hr className="bg-sky-500" />
+                <div className="timeline-middle">
+                  <i className="fa fa-check bg-sky-500"></i>
+                </div>
+                <div className="timeline-end m-10">
+                  <div className="text-lg text-bold">ND-2 Software Developer</div>
+                  <div className="text-md">Naval Surface Warfare Center, Carderock Division, January 2025-present</div>
+                  I'm currently working as a Navy civilian maintaining the acoustic modelling software used in submarine and surface trainers. In this position, I've developed my skills in analyzing and documenting legacy code in a partially classified codebase.
+                </div>
+                <hr className="bg-sky-500" />
               </li>
             </ul>
           </div>
