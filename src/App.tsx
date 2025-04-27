@@ -65,7 +65,7 @@ class App extends React.Component {
               </li>
               <li>
                 <hr className="bg-sky-500" />
-                <div className="timeline-start md:text-end m-10">
+                <div className="timeline-start md:text-end mx-10">
                   <div className="text-lg text-bold">Undergraduate Research Assistant</div>
                   <div className="text-md">VTNSI Analyzing Malware with LLMs Project, August 2023-May 2024</div>
                   I am working as an undergarduate research assistant with the Virginia Tech National Security Institute on a project exploring the application of LLMs to analyzing and detecting malware.<br />
@@ -81,7 +81,7 @@ class App extends React.Component {
                 <div className="timeline-middle">
                   <i className="fa fa-check bg-sky-500"></i>
                 </div>
-                <div className="timeline-end m-10">
+                <div className="timeline-end mx-10">
                   <div className="text-lg text-bold">Student Machine Learning Team Leader</div>
                   <div className="text-md">VTURCS AI-Powered Diary Study Tool Project, January 2024-May 2024</div>
                   {"t"}I worked as the AI/ML team leader for a VTURCS research project with the objective of creating a diary study platform that allows administrators to analyze user entries with AI-powered topic modelling.
@@ -93,7 +93,7 @@ class App extends React.Component {
                 <div className="timeline-middle">
                   <i className="fa fa-check bg-sky-500"></i>
                 </div>
-                <div className="timeline-start md:text-end m-10">
+                <div className="timeline-start md:text-end mx-10">
                   <div className="text-lg text-bold">Student Researcher</div>
                   <div className="text-md">VTURCS Appalachian Trail Mobile Software Project, June 2024-July 2024</div>
                   I worked on a summer research project focused on developing a mobile app to help hikers on the Appalachian Trail journal and track their progress and fill out social research surveys for rewards.
@@ -105,7 +105,7 @@ class App extends React.Component {
                 <div className="timeline-middle">
                   <i className="fa fa-check bg-sky-500"></i>
                 </div>
-                <div className="timeline-end m-10">
+                <div className="timeline-end mx-10">
                   <div className="text-lg text-bold">ND-2 Software Developer</div>
                   <div className="text-md">Naval Surface Warfare Center, Carderock Division, January 2025-present</div>
                   I'm currently working as a Navy civilian maintaining the acoustic modelling software used in submarine and surface trainers. In this position, I've developed my skills in analyzing and documenting legacy code in a partially classified codebase.
@@ -117,16 +117,23 @@ class App extends React.Component {
         <section id="skills"> {/* SKILLS SECTION */}
           <div className="p-5 lg:p-10 text-left">
             <h1 className="text-4xl lg:text-5xl my-5 lg:m-10">Skills</h1>
-            <div className="card lg:mx-20 my-10 lg:my-0 lg:p-10 lg:w-4/5">
-              <img src="/img/icons8-internet-48.png" className="w-10 my-5" alt="web development" />
-              <h1 className="text-xl font-bold">Web Development</h1>
-              <p className="flex">I have experience with full-stack development as an independent hobbyist, working on teams, and working on research projects. I have exprience with PHP, React.js, Node.js, MySQL, MongoDB, and all the standard front-end languages. Web development has been my programming mode of choice since middle school.</p>
-            </div>
-            <div className="card lg:mx-20 my-10 lg:my-0 lg:p-10 lg:w-4/5">
-              <img src="/img/icons8-robot-50.png" className="w-10 my-5 " alt="machine learning" />
-              <h1 className="text-xl font-bold">Machine Learning</h1>
-              <p className="flex">I have a combined year of experience using both large langauge models and topic models in research projects at Virginia Tech related to code analysis and data modelling.</p>
-            </div>
+	    <div className="flex flex-row">
+                <div className="flex-1 px-10">
+		    <img src="/img/icons8-internet-48.png" className="w-10 my-5" alt="web development" />
+		    <h1 className="text-xl font-bold">Web Development</h1>
+		    <p className="flex">I have front-end development experience as a hobbyist and from working on small teams at in college and in my career.</p>
+		</div>
+		<div className="flex-1 px-10">
+		    <img src="/img/icons8-robot-50.png" className="w-10 my-5 " alt="machine learning" />
+                    <h1 className="text-xl font-bold">Machine Learning</h1>
+                    <p className="flex">I have some experience using both LLMs and smaller topic models in research projects at Virginia Tech related to code analysis and data modelling.</p>
+		</div>
+		<div className="flex-1 px-10">
+		    <img src="/img/icons8-rocket-50.png" className="w-10 my-5" alt="defense" />
+		    <h1 className="text-xl font-bold">Defense</h1>
+		    <p className="flex">I have experience from Virginia Tech and as a DoD employee with coding in a sensitive industry with high standards for security.</p>
+		</div>
+	    </div>
           </div>
         </section>
         <section id="projects"> {/* PROJECTS SECTION */}
