@@ -1,12 +1,15 @@
 services:
     portfolio-site:
-        build: .
+        image: nginx:latest
+        container_name: portfolio
         environment:
-            - VIRTUAL_HOST=node.pajordan.com
-            - LETSENCRYPT_HOST=node.pajordan.com
+            - VIRTUAL_HOST=pajordan.com
+            - LETSENCRYPT_HOST=pajordan.com
         networks:
             - net
-        container_name: node-portfolio
+        volumes:
+            - ./build:/usr/share/nginx/html
+            - ./nginx.conf:/etc/nginx/nginx.conf
 networks:
     net:
         external: true
