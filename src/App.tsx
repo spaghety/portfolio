@@ -91,50 +91,55 @@ class App extends React.Component {
               <li>
                 <hr className="bg-sky-500" />
                 <div className="timeline-middle">
-                  <i className="fa fa-check bg-sky-500"></i>
+                    <i className="fa fa-check bg-sky-500"></i>
                 </div>
-                <div className="timeline-start md:text-end mx-10">
-                  <div className="text-lg text-bold">Student Researcher</div>
-                  <div className="text-md">VTURCS Appalachian Trail Mobile Software Project, June 2024-July 2024</div>
-                  I worked on a summer research project focused on developing a mobile app to help hikers on the Appalachian Trail journal and track their progress and fill out social research surveys for rewards.
-                </div>
-                <hr className="bg-sky-500" />
-              </li>
-              <li>
-                <hr className="bg-sky-500" />
-                <div className="timeline-middle">
-                  <i className="fa fa-check bg-sky-500"></i>
-                </div>
-                <div className="timeline-end mx-10">
-                  <div className="text-lg text-bold">ND-2 Software Developer</div>
-                  <div className="text-md">Naval Surface Warfare Center, Carderock Division, January 2025-present</div>
-                  I'm currently working as a Navy civilian maintaining the acoustic modelling software used in submarine and surface trainers. In this position, I've developed my skills in analyzing and documenting legacy code in a partially classified codebase.
-                </div>
-              </li>
-            </ul>
-          </div>
+                    <div className="timeline-start md:text-end mx-10">
+                        <div className="text-lg text-bold">Student Researcher</div>
+                        <div className="text-md">VTURCS Appalachian Trail Mobile Software Project, June 2024-July 2024</div>
+                        I worked on a summer research project focused on developing a mobile app to help hikers on the Appalachian Trail journal and track their progress and fill out social research surveys for rewards.
+                    </div>
+                    <hr className="bg-sky-500" />
+                </li>
+                <li>
+                    <hr className="bg-sky-500" />
+                    <div className="timeline-middle">
+                        <i className="fa fa-check bg-sky-500"></i>
+                    </div>
+                    <div className="timeline-end mx-10">
+                        <div className="text-lg text-bold">ND-2 Software Developer</div>
+                            <div className="text-md">Naval Surface Warfare Center, Carderock Division, January 2025-present</div>
+                            I'm currently working as a Navy civilian maintaining the acoustic modelling software used in submarine and surface trainers. In this position, I've developed my skills in analyzing and documenting legacy code in a partially classified codebase.
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section id="skills"> {/* SKILLS SECTION */}
-          <div className="p-5 lg:p-10 text-left">
-            <h1 className="text-4xl lg:text-5xl my-5 lg:m-10">Skills</h1>
-	    <div className="flex flex-row">
-                <div className="flex-1 px-10">
-		    <img src="/img/icons8-internet-48.png" className="w-10 my-5" alt="web development" />
-		    <h1 className="text-xl font-bold">Web Development</h1>
-		    <p className="flex">I have front-end development experience as a hobbyist and from working on small teams at in college and in my career.</p>
-		</div>
-		<div className="flex-1 px-10">
-		    <img src="/img/icons8-robot-50.png" className="w-10 my-5 " alt="machine learning" />
-                    <h1 className="text-xl font-bold">Machine Learning</h1>
-                    <p className="flex">I have some experience using both LLMs and smaller topic models in research projects at Virginia Tech related to code analysis and data modelling.</p>
-		</div>
-		<div className="flex-1 px-10">
-		    <img src="/img/icons8-rocket-50.png" className="w-10 my-5" alt="defense" />
-		    <h1 className="text-xl font-bold">Defense</h1>
-		    <p className="flex">I have experience from Virginia Tech and as a DoD employee with coding in a sensitive industry with high standards for security.</p>
-		</div>
-	    </div>
-          </div>
+            <div className="p-5 lg:p-10 text-left">
+                <h1 className="text-4xl lg:text-5xl my-5 lg:m-10">Skills</h1>
+                <div className="grid grid-cols-3 gap-10">
+                    <div>
+                        <img src="/img/icons8-internet-48.png" className="w-10 my-5" alt="web development" />
+                        <h1 className="text-xl font-bold">Web Development</h1>
+                        <p className="flex">I have front-end development experience as a hobbyist and from working on small teams at in college and in my career.</p>
+                    </div>
+                    <div>
+                        <img src="/img/icons8-robot-50.png" className="w-10 my-5 " alt="machine learning" />
+                        <h1 className="text-xl font-bold">Machine Learning</h1>
+                        <p className="flex">I have some experience using both LLMs and smaller topic models in research projects at Virginia Tech related to code analysis and data modelling.</p>
+                    </div>
+                    <div>
+                        <img src="/img/icons8-rocket-50.png" className="w-10 my-5" alt="defense" />
+                        <h1 className="text-xl font-bold">Defense</h1>
+                        <p className="flex">I have experience from Virginia Tech and as a DoD employee with coding in a sensitive industry with high standards for security.</p>
+                    </div>
+                    <div>
+                        <img src="/img/icons8-docker-50.png" className="w-10 my-5" alt="defense" />
+                        <h1 className="text-xl font-bold">Containers</h1>
+                        <p className="flex">I regularly use containers in my hobbyist projects and in my career with docker, podman, and kubernetes to improve reliability and modularity.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="projects"> {/* PROJECTS SECTION */}
           <div className="p-5 lg:p-10 text-left grid">
