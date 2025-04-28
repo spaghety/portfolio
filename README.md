@@ -1,13 +1,8 @@
-# My Portfolio
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the main page of my personal domain/server at [pajordan.com](https://pajordan.com/). More official subdomains dedicated to various
+projects will be soon to follow. My portfolio website is being run with docker compose on a network managed by an nginx reverse proxy system that
+manages all incoming requests. You can find my reverse proxy repository [here](https://github.com/spaghety/reverse-proxy/).
 
-## More info
-
-If you're reading this, feel free to check out my other github projects. Most of them aren't too serious but they can still give an idea of my interests at the moment and some of my competencies.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I originally created this portfolio with [Create React App](https://github.com/facebook/create-react-app). Howeever, since CRA has been deprecated,
+I'm looking to move on to use something more current like Next.js and take more advantage of the modularity that react offers.
