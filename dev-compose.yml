@@ -5,7 +5,6 @@ services:
         ports:
             - "3000:3000"
         volumes:
-          - ./src:/app/src
-          - ./public:/app/public
+            - ./app:/app
         stdin_open: true
         tty: true
