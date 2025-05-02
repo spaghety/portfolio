@@ -1,31 +1,32 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
     return (
       <div className="App bg-zinc-900 text-neutral-300">
-        <section id="top"> {/* HERO SECTION */}
+        <div id="top"> {/* HERO SECTION */}
           <div className="hero h-screen">
             <div className="hero-content flex-col lg:flex-row">
-              <img src="img/pfp.jpg" className="lg:max-w-sm max-w-64 rounded-lg shadow-2x1" alt="Me" />
+              <img src="/img/pfp.jpg" className="lg:max-w-sm max-w-64 rounded-lg shadow-2x1" alt="Me" />
               <div className="text-left lg:w-2/5">
                 <h1 className="lg:text-5xl text-4xl font-bold">Phillip Jordan</h1>
                 <p className="py-6">I'm a Navy civilian employee maintaining a partially classified codebase for acoustic simulations used in submarine and surface trainers written primarily in C++, looking for new opportunities to use my security clearance and improve my technical skills.</p>
-                <Link smooth spy to="footer" className="btn rounded-full px-5 bg-transparent text-sky-400 border-sky-400 hover:border-sky-400 hover:bg-sky-400 hover:text-zinc-900">
+                <Link href="#top" className="btn rounded-full px-5 bg-transparent text-sky-400 border-sky-400 hover:border-sky-400 hover:bg-sky-400 hover:text-zinc-900">
                 Links
                 </Link>
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <div className="navbar-center bg-zinc-950 text-xs p-2 sticky top-0 z-50">
           <ul className="menu menu-horizontal p-0 border-solid border-2 rounded-full border-sky-400 p-0 bg-zinc-900">
-            <li><Link activeClass="active" smooth spy to="top" className="rounded-full p-3 px-4 lg:px-8">Home</Link></li>
-            <li><Link activeClass="active" smooth spy to="experience" className="rounded-full p-3 px-4 lg:px-8">Experience</Link></li>
-            <li><Link activeClass="active" smooth spy to="skills" className="rounded-full p-3 px-4 lg:px-8">Skills</Link></li>
-            <li><Link activeClass="active" smooth spy to="projects" className="rounded-full p-3 px-4 lg:px-8">Projects</Link></li>
+            <li><Link activeclass="active" href="top" className="rounded-full p-3 px-4 lg:px-8">Home</Link></li>
+            <li><Link activeclass="active" href="experience" className="rounded-full p-3 px-4 lg:px-8">Experience</Link></li>
+            <li><Link activeclass="active" href="skills" className="rounded-full p-3 px-4 lg:px-8">Skills</Link></li>
+            <li><Link activeclass="active" href="projects" className="rounded-full p-3 px-4 lg:px-8">Projects</Link></li>
           </ul>
         </div>
-        <section id="experience"> {/* EXPERIENCE SECTION */}
+        <div id="experience"> {/* EXPERIENCE SECTION */}
           <div className="p-5 lg:p-10 text-left">
             <h1 className="text-4xl lg:text-5xl my-5 lg:m-10">Experience</h1>
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -91,8 +92,8 @@ export default function Home() {
                     </li>
                 </ul>
             </div>
-        </section>
-        <section id="skills"> {/* SKILLS SECTION */}
+        </div>
+        <div id="skills"> {/* SKILLS SECTION */}
             <div className="p-5 lg:p-10 text-left">
                 <h1 className="text-4xl lg:text-5xl my-5 lg:m-10">Skills</h1>
                 <div className="grid grid-cols-3 gap-10">
@@ -118,8 +119,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="projects"> {/* PROJECTS SECTION */}
+        </div>
+        <div id="projects"> {/* PROJECTS SECTION */}
           <div className="p-5 lg:p-10 text-left grid">
             <h1 className="text-4xl lg:text-5xl my-5 lg:m-10">Projects</h1>
             <div className="card lg:card-side my-10 mx-5 lg:w-4/5 bg-zinc-800 shadow-xl">
@@ -159,8 +160,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-        <section id="footer">
+        </div>
+        <div id="footer">
           <footer className="footer footer-center p-10 bg-zinc-950 text-base-content rounded"> {/* FOOTER */}
             <nav>
               <div className="grid grid-flow-col gap-5 text-2xl">
@@ -170,7 +171,7 @@ export default function Home() {
               </div>
             </nav>
           </footer>
-        </section>
+        </div>
       </div>
     );
 }
