@@ -1,10 +1,34 @@
+"use client";
+import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
+  const sections: string[] = ["me", "experience", "skills", "projects"];
+  const [activeSelection, setActiveSelection] = useState(null);
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.4,
+    };
+    const observer = new IntersectionObserver((entries: any) => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          setActiveSelection(entry.target.id);
+        }
+      });
+    }, options);
+
+    sections.forEach((section: string) => {
+      const element = document.getElementById(section);
+      if (element) observer.observe(element);
+    });
+    return() => observer.disconnect();
+  }, [sections]);
     return (
       <div className="App bg-zinc-900 text-neutral-300">
-        <div id="top"> {/* HERO SECTION */}
+        <div id="me"> {/* HERO SECTION */}
           <div className="hero h-screen">
             <div className="hero-content flex-col lg:flex-row">
               <img src="/img/pfp.jpg" className="lg:max-w-sm max-w-64 rounded-lg shadow-2x1" alt="Me" />
@@ -18,13 +42,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="navbar-center bg-zinc-950 text-xs p-2 sticky top-0 z-50">
-          <ul className="menu menu-horizontal p-0 border-solid border-2 rounded-full border-sky-400 p-0 bg-zinc-900">
-            <li><Link activeclass="active" href="top" className="rounded-full p-3 px-4 lg:px-8">Home</Link></li>
-            <li><Link activeclass="active" href="experience" className="rounded-full p-3 px-4 lg:px-8">Experience</Link></li>
-            <li><Link activeclass="active" href="skills" className="rounded-full p-3 px-4 lg:px-8">Skills</Link></li>
-            <li><Link activeclass="active" href="projects" className="rounded-full p-3 px-4 lg:px-8">Projects</Link></li>
-          </ul>
+        <div className="flex justify-center opacity-100 bg-zinc-950/80 shadow-xl text-xs p-2 sticky top-0 z-50">
+          <nav className="menu menu-horizontal p-0 border-solid border-2 rounded-full border-sky-400 p-0 bg-zinc-900">
+            {
+              sections.map((section: string, i: number) => {
+                return(
+                  <a
+                    key={i}
+                    href={`#${section}`}
+                    className={`uppercase font-semibold text-base text-white text-center rounded-full p-3 px-4 lg:px-8 ${activeSelection == section ? "bg-slate-700": ""}`}
+                  >
+                    {section}
+                  </a>
+                )
+              })
+            }
+          </nav>
         </div>
         <div id="experience"> {/* EXPERIENCE SECTION */}
           <div className="p-5 lg:p-10 text-left">
