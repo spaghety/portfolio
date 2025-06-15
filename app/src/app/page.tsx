@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 export default function Home() {
   const sections: string[] = ["me", "experience", "skills", "projects"];
   const [activeSelection, setActiveSelection] = useState(null);
@@ -35,9 +39,9 @@ export default function Home() {
               <div className="text-left lg:w-2/5">
                 <h1 className="lg:text-5xl text-4xl font-bold">Phillip Jordan</h1>
                 <p className="py-6">I'm a Navy civilian employee maintaining a partially classified codebase for acoustic simulations used in submarine and surface trainers written primarily in C++, looking for new opportunities to use my security clearance and improve my technical skills.</p>
-                <Link href="#top" className="btn rounded-full px-5 bg-transparent text-sky-400 border-sky-400 hover:border-sky-400 hover:bg-sky-400 hover:text-zinc-900">
+                <a href="#footer" className="btn rounded-full px-5 bg-transparent text-sky-400 border-sky-400 hover:border-sky-400 hover:bg-sky-400 hover:text-zinc-900">
                 Links
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -50,7 +54,7 @@ export default function Home() {
                   <a
                     key={i}
                     href={`#${section}`}
-                    className={`uppercase font-semibold text-base text-white text-center rounded-full p-3 px-4 lg:px-8 ${activeSelection == section ? "bg-slate-700": ""}`}
+                    className={`text-base capitalize text-center rounded-full p-3 px-4 lg:px-8 ${activeSelection == section ? "bg-slate-700": ""}`}
                   >
                     {section}
                   </a>
@@ -198,9 +202,9 @@ export default function Home() {
           <footer className="footer footer-center p-10 bg-zinc-950 text-base-content rounded"> {/* FOOTER */}
             <nav>
               <div className="grid grid-flow-col gap-5 text-2xl">
-                <a href="https://linkedin.com/in/phillip-a-jordan" target="_blank" rel="noreferrer"><i className="fa fa-linkedin hover:text-sky-400"></i></a>
-                <a href="https://github.com/spaghety" target="_blank" rel="noreferrer"><i className="fa fa-github hover:text-sky-400"></i></a>
-                <a href="/pdf/resume.pdf" target="_blank" rel="noreferrer"><i className="ai ai-cv hover:text-sky-400"></i></a>
+                <a href="https://linkedin.com/in/phillip-a-jordan" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faLinkedin } className="sky-400" /></a>
+                <a href="https://github.com/spaghety" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faGithub } className="hover:text-sky-400" /></a>
+                <a href="/pdf/resume.pdf" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faFile } className="hover:text-sky-400" /></a>
               </div>
             </nav>
           </footer>
