@@ -1,8 +1,29 @@
-# Portfolio
+# Create T3 App
 
-This is the main page of my personal domain/server at [pajordan.com](https://pajordan.com/). More official subdomains dedicated to various
-projects will be soon to follow. My portfolio website is being run with docker compose on a network managed by an nginx reverse proxy system that
-manages all incoming requests. You can find my reverse proxy repository [here](https://github.com/spaghety/reverse-proxy/).
+This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
-I originally created this portfolio with [Create React App](https://github.com/facebook/create-react-app). Howeever, since CRA has been deprecated,
-I'm looking to move on to use something more current like Next.js and take more advantage of the modularity that react offers.
+## What's next? How do I make an app with this?
+
+We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+
+If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+
+- [Next.js](https://nextjs.org)
+- [NextAuth.js](https://next-auth.js.org)
+- [Prisma](https://prisma.io)
+- [Drizzle](https://orm.drizzle.team)
+- [Tailwind CSS](https://tailwindcss.com)
+- [tRPC](https://trpc.io)
+
+## Learn More
+
+To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+
+- [Documentation](https://create.t3.gg/)
+- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+
+You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+
+## How do I deploy this?
+
+Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
