@@ -8,8 +8,8 @@
 # testing
 /coverage
 
-# production
-/build
+# production included to reduce load on server
+# /build
 
 # misc
 .DS_Store
